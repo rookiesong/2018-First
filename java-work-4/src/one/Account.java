@@ -23,7 +23,7 @@ public class Account
     }
     public void visit()
     {
-        System.out.println("The id is " + id + ",the banlance is " + banlance + ",the annuallnterestRate is " + annuallnterestRate + ".");
+        System.out.print("The id is " + id + ",the banlance is " + banlance + ",the annuallnterestRate is " + annuallnterestRate + ",");
 
     }
     public void change()
@@ -37,9 +37,9 @@ public class Account
     {
         System.out.println(dateCreated.toString());
     }
-    public double gerMonthlyInterestRate(double annuallnterestRate)
+    public void getMonthlyInterestRate()
     {
-        return annuallnterestRate/12;
+        System.out.println("the MonthlyInterestRate is "+(annuallnterestRate/12.0)+".");
     }
     public void withDraw(double money)
     {
