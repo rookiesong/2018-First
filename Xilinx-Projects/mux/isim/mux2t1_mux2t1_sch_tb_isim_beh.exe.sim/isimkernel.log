@@ -1,10 +1,10 @@
 Command line:
    mux2t1_mux2t1_sch_tb_isim_beh.exe
      -simmode  gui
-     -simrunnum  1
-     -socket  40923
+     -simrunnum  0
+     -socket  47268
 
-Fri May 18 11:16:48 2018
+Fri May 18 16:35:21 2018
 
 
  Elaboration Time: 0.0468 sec
@@ -20,9 +20,9 @@ Fri May 18 11:16:48 2018
  Total Traceable Variables  : 21
  Total Scalar Nets and Variables : 103
 
- Total Simulation Time: 0.374402 sec
+ Total Simulation Time: 0.0624 sec
 
  Current Memory Usage: 668.447 Meg
 
-Fri May 18 11:18:36 2018
+Fri May 18 16:35:36 2018
 

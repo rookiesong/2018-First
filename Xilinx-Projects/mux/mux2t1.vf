@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : mux2t1.vf
-// /___/   /\     Timestamp : 05/18/2018 11:11:03
+// /___/   /\     Timestamp : 05/19/2018 14:28:27
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -30,19 +30,19 @@ module mux2t1(a,
     input sel;
    output o;
    
-   wire XLXN_3;
-   wire XLXN_6;
+   wire XLXN_5;
    wire XLXN_7;
+   wire XLXN_11;
    
-   AND2  XLXI_4 (.I0(a), 
+   AND2  XLXI_1 (.I0(a), 
                 .I1(sel), 
-                .O(XLXN_6));
-   AND2  XLXI_5 (.I0(b), 
-                .I1(XLXN_3), 
+                .O(XLXN_5));
+   AND2  XLXI_2 (.I0(b), 
+                .I1(XLXN_11), 
                 .O(XLXN_7));
-   INV  XLXI_6 (.I(sel), 
-               .O(XLXN_3));
-   OR2  XLXI_7 (.I0(XLXN_7), 
-               .I1(XLXN_6), 
+   INV  XLXI_3 (.I(sel), 
+               .O(XLXN_11));
+   OR2  XLXI_4 (.I0(XLXN_7), 
+               .I1(XLXN_5), 
                .O(o));
 endmodule

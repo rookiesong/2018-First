@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-05-18T10:57:37</DateModified>
+  <DateModified>2018-05-18T16:29:32</DateModified>
   <ModuleName>mux2t1</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>D:/Documents/GitHub/First/Xilinx-Projects/mux/iseconfig/mux2t1.xreport</SavedFilePath>
   <ImplementationReportsDirectory>D:/Documents/GitHub/First/Xilinx-Projects/mux</ImplementationReportsDirectory>
-  <DateInitialized>2018-05-18T10:57:37</DateInitialized>
+  <DateInitialized>2018-05-18T16:29:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -2,12 +2,12 @@ Command line:
    adder_4bit_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  40488
+     -socket  7822
 
-Fri May 18 10:36:26 2018
+Fri May 18 14:29:51 2018
 
 
- Elaboration Time: 0.0624 sec
+ Elaboration Time: 0.0312 sec
 
  Current Memory Usage: 668.447 Meg
 
@@ -20,9 +20,9 @@ Fri May 18 10:36:26 2018
  Total Traceable Variables  : 22
  Total Scalar Nets and Variables : 167
 
- Total Simulation Time: 0.078 sec
+ Total Simulation Time: 0.0624 sec
 
  Current Memory Usage: 668.447 Meg
 
-Fri May 18 10:36:30 2018
+Fri May 18 14:44:56 2018
 

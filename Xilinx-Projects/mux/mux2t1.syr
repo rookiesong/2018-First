@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: mux2t1.prj
 
@@ -265,9 +265,9 @@ Delay:               2.781ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   0.000   0.405  sel_IBUF (sel_IBUF)
-     INV:I->O              1   0.393   0.725  XLXI_6 (XLXN_3)
-     AND2:I1->O            1   0.067   0.739  XLXI_5 (XLXN_7)
-     OR2:I0->O             1   0.053   0.399  XLXI_7 (o_OBUF)
+     INV:I->O              1   0.393   0.725  XLXI_3 (XLXN_11)
+     AND2:I1->O            1   0.067   0.739  XLXI_2 (XLXN_7)
+     OR2:I0->O             1   0.053   0.399  XLXI_4 (o_OBUF)
      OBUF:I->O                 0.000          o_OBUF (o)
     ----------------------------------------
     Total                      2.781ns (0.513ns logic, 2.268ns route)
@@ -282,7 +282,7 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.09 secs
+Total CPU time to Xst completion: 9.17 secs
  
 --> 
 
