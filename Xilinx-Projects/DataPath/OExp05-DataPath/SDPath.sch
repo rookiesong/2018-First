@@ -9,11 +9,9 @@
         <signal name="XLXN_1(31:0)" />
         <signal name="XLXN_2(31:0)" />
         <signal name="Data_out(31:0)" />
-        <signal name="Imm_32" />
         <signal name="XLXN_4(4:0)" />
         <signal name="XLXN_5(31:0)" />
         <signal name="MemtoReg" />
-        <signal name="Data_in(31:0)" />
         <signal name="RegDst" />
         <signal name="RegWrite" />
         <signal name="ALUSrc_B" />
@@ -23,7 +21,6 @@
         <signal name="rst" />
         <signal name="XLXN_58" />
         <signal name="Branch" />
-        <signal name="V5" />
         <signal name="PC_out(31:0)" />
         <signal name="XLXN_78(31:0)" />
         <signal name="Jump_addr" />
@@ -34,20 +31,17 @@
         <signal name="Jump" />
         <signal name="XLXN_89(31:0)" />
         <signal name="NO" />
+        <signal name="inst_field(25:21)" />
+        <signal name="inst_field(20:16)" />
+        <signal name="inst_field(15:11)" />
+        <signal name="inst_field(25:0)" />
+        <signal name="inst_field(15:0)" />
         <signal name="b(31:0)" />
-        <signal name="XLXN_105" />
-        <signal name="XLXN_112" />
-        <signal name="XLXN_114" />
-        <signal name="XLXN_118(4:0)" />
-        <signal name="XLXN_119(4:0)" />
-        <signal name="XLXN_120(4:0)" />
-        <signal name="rs" />
-        <signal name="rt" />
-        <signal name="XLXN_124(4:0)" />
-        <signal name="rd" />
+        <signal name="XLXN_149(31:0)" />
+        <signal name="Data_in(31:0)" />
+        <signal name="b(2)" />
         <port polarity="Output" name="Data_out(31:0)" />
         <port polarity="Input" name="MemtoReg" />
-        <port polarity="Input" name="Data_in(31:0)" />
         <port polarity="Input" name="RegDst" />
         <port polarity="Input" name="RegWrite" />
         <port polarity="Input" name="ALUSrc_B" />
@@ -58,6 +52,8 @@
         <port polarity="Input" name="Branch" />
         <port polarity="Output" name="PC_out(31:0)" />
         <port polarity="Input" name="Jump" />
+        <port polarity="Input" name="inst_field(25:0)" />
+        <port polarity="Input" name="Data_in(31:0)" />
         <blockdef name="alu">
             <timestamp>2017-3-28T6:46:32</timestamp>
             <line x2="108" y1="-216" y2="-136" style="linewidth:W;linecolor:rgb(255,0,0)" x1="32" />
@@ -179,23 +175,23 @@
             <blockpin signalname="rst" name="rst" />
             <blockpin signalname="XLXN_5(31:0)" name="Wt_data(31:0)" />
             <blockpin signalname="XLXN_2(31:0)" name="rdata_B(31:0)" />
-            <blockpin signalname="rs" name="R_addr_A(4:0)" />
-            <blockpin signalname="rt" name="R_addr_B(4:0)" />
+            <blockpin signalname="inst_field(25:21)" name="R_addr_A(4:0)" />
+            <blockpin signalname="inst_field(20:16)" name="R_addr_B(4:0)" />
             <blockpin signalname="XLXN_4(4:0)" name="Wt_addr(4:0)" />
         </block>
         <block symbolname="MUX2T1_32" name="MUXD3">
             <blockpin signalname="ALUSrc_B" name="s" />
             <blockpin signalname="XLXN_2(31:0)" name="I0(31:0)" />
-            <blockpin signalname="Imm_32" name="I1(31:0)" />
+            <blockpin signalname="XLXN_149(31:0)" name="I1(31:0)" />
             <blockpin signalname="Data_out(31:0)" name="o(31:0)" />
         </block>
         <block symbolname="Ext_32" name="Ext">
-            <blockpin name="imm_16(15:0)" />
-            <blockpin signalname="Imm_32" name="Imm_32(31:0)" />
+            <blockpin signalname="inst_field(15:0)" name="imm_16(15:0)" />
+            <blockpin signalname="XLXN_149(31:0)" name="Imm_32(31:0)" />
         </block>
         <block symbolname="MUX2T1_5" name="MUXD1">
-            <blockpin signalname="rd" name="I1(4:0)" />
-            <blockpin signalname="rt" name="I0(4:0)" />
+            <blockpin signalname="inst_field(15:11)" name="I1(4:0)" />
+            <blockpin signalname="inst_field(20:16)" name="I0(4:0)" />
             <blockpin signalname="XLXN_4(4:0)" name="o(4:0)" />
             <blockpin signalname="RegDst" name="s" />
         </block>
@@ -212,13 +208,13 @@
         </block>
         <block symbolname="REG32" name="PC">
             <blockpin signalname="XLXN_89(31:0)" name="D(31:0)" />
-            <blockpin signalname="V5" name="CE" />
+            <blockpin signalname="b(2)" name="CE" />
             <blockpin signalname="rst" name="rst" />
             <blockpin signalname="clk" name="clk" />
             <blockpin signalname="PC_out(31:0)" name="Q(31:0)" />
         </block>
         <block symbolname="vcc" name="XLXI_7">
-            <blockpin signalname="V5" name="P" />
+            <blockpin signalname="b(2)" name="P" />
         </block>
         <block symbolname="add_32" name="ADD_PC_4">
             <blockpin signalname="b(31:0)" name="b(31:0)" />
@@ -271,12 +267,6 @@
         <instance x="1216" y="1952" name="Ext" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="96" y="36" type="instance" />
         </instance>
-        <branch name="Imm_32">
-            <wire x2="1504" y1="1888" y2="1888" x1="1488" />
-            <wire x2="1744" y1="1888" y2="1888" x1="1504" />
-            <wire x2="1744" y1="1728" y2="1888" x1="1744" />
-            <wire x2="1888" y1="1728" y2="1728" x1="1744" />
-        </branch>
         <instance x="1104" y="1616" name="MUXD1" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
@@ -293,11 +283,7 @@
             <wire x2="1120" y1="1648" y2="1648" x1="192" />
             <wire x2="1120" y1="1648" y2="1664" x1="1120" />
         </branch>
-        <branch name="Data_in(31:0)">
-            <wire x2="1088" y1="1760" y2="1760" x1="192" />
-        </branch>
         <iomarker fontsize="28" x="192" y="1648" name="MemtoReg" orien="R180" />
-        <iomarker fontsize="28" x="192" y="1760" name="Data_in(31:0)" orien="R180" />
         <branch name="RegDst">
             <wire x2="1120" y1="1392" y2="1392" x1="192" />
             <wire x2="1120" y1="1392" y2="1536" x1="1120" />
@@ -353,7 +339,8 @@
         </instance>
         <instance x="368" y="144" name="XLXI_7" orien="R0" />
         <branch name="PC_out(31:0)">
-            <wire x2="1376" y1="432" y2="432" x1="992" />
+            <wire x2="1264" y1="432" y2="432" x1="992" />
+            <wire x2="1376" y1="432" y2="432" x1="1264" />
             <wire x2="3248" y1="432" y2="432" x1="1376" />
             <wire x2="1376" y1="432" y2="480" x1="1376" />
             <wire x2="1488" y1="480" y2="480" x1="1376" />
@@ -375,17 +362,6 @@
         <instance x="1728" y="592" name="ADD_Branch" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="16" y="4" type="instance" />
         </instance>
-        <branch name="V5">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="464" y="160" type="branch" />
-            <wire x2="432" y1="144" y2="160" x1="432" />
-            <wire x2="464" y1="160" y2="160" x1="432" />
-            <wire x2="784" y1="160" y2="160" x1="464" />
-            <wire x2="784" y1="160" y2="464" x1="784" />
-            <wire x2="848" y1="464" y2="464" x1="784" />
-            <wire x2="1136" y1="160" y2="160" x1="784" />
-            <wire x2="1136" y1="160" y2="512" x1="1136" />
-            <wire x2="1280" y1="512" y2="512" x1="1136" />
-        </branch>
         <branch name="XLXN_78(31:0)">
             <wire x2="1680" y1="496" y2="496" x1="1584" />
             <wire x2="2176" y1="496" y2="496" x1="1680" />
@@ -431,21 +407,66 @@
             <wire x2="2560" y1="48" y2="64" x1="2560" />
             <wire x2="2608" y1="48" y2="48" x1="2560" />
         </branch>
-        <branch name="b(31:0)">
-            <wire x2="1488" y1="512" y2="512" x1="1376" />
-        </branch>
-        <branch name="rs">
+        <branch name="inst_field(25:21)">
+            <wire x2="672" y1="1456" y2="1456" x1="608" />
             <wire x2="1248" y1="1456" y2="1456" x1="672" />
         </branch>
-        <branch name="rt">
-            <wire x2="928" y1="1504" y2="1504" x1="672" />
+        <branch name="inst_field(15:11)">
+            <wire x2="672" y1="1600" y2="1600" x1="608" />
+            <wire x2="912" y1="1600" y2="1600" x1="672" />
+            <wire x2="1104" y1="1600" y2="1600" x1="912" />
+        </branch>
+        <branch name="inst_field(25:0)">
+            <wire x2="416" y1="1504" y2="1504" x1="192" />
+            <wire x2="512" y1="1504" y2="1504" x1="416" />
+            <wire x2="544" y1="1504" y2="1504" x1="512" />
+            <wire x2="416" y1="1504" y2="1536" x1="416" />
+            <wire x2="416" y1="1536" y2="1600" x1="416" />
+            <wire x2="416" y1="1600" y2="1952" x1="416" />
+            <wire x2="528" y1="1952" y2="1952" x1="416" />
+            <wire x2="512" y1="1600" y2="1600" x1="416" />
+            <wire x2="512" y1="1456" y2="1456" x1="416" />
+            <wire x2="416" y1="1456" y2="1504" x1="416" />
+        </branch>
+        <iomarker fontsize="28" x="192" y="1504" name="inst_field(25:0)" orien="R180" />
+        <bustap x2="608" y1="1456" y2="1456" x1="512" />
+        <bustap x2="640" y1="1504" y2="1504" x1="544" />
+        <bustap x2="608" y1="1600" y2="1600" x1="512" />
+        <branch name="inst_field(20:16)">
+            <wire x2="672" y1="1504" y2="1504" x1="640" />
+            <wire x2="688" y1="1504" y2="1504" x1="672" />
+            <wire x2="928" y1="1504" y2="1504" x1="688" />
             <wire x2="1248" y1="1504" y2="1504" x1="928" />
             <wire x2="928" y1="1504" y2="1568" x1="928" />
             <wire x2="1104" y1="1568" y2="1568" x1="928" />
         </branch>
-        <branch name="rd">
-            <wire x2="912" y1="1600" y2="1600" x1="672" />
-            <wire x2="1104" y1="1600" y2="1600" x1="912" />
+        <bustap x2="624" y1="1952" y2="1952" x1="528" />
+        <branch name="inst_field(15:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1952" type="branch" />
+            <wire x2="1280" y1="1952" y2="1952" x1="624" />
+            <wire x2="1312" y1="1952" y2="1952" x1="1280" />
+        </branch>
+        <branch name="b(31:0)">
+            <wire x2="1376" y1="512" y2="512" x1="1360" />
+            <wire x2="1488" y1="512" y2="512" x1="1376" />
+        </branch>
+        <bustap x2="1264" y1="512" y2="512" x1="1360" />
+        <branch name="XLXN_149(31:0)">
+            <wire x2="1744" y1="1888" y2="1888" x1="1488" />
+            <wire x2="1744" y1="1728" y2="1888" x1="1744" />
+            <wire x2="1888" y1="1728" y2="1728" x1="1744" />
+        </branch>
+        <branch name="Data_in(31:0)">
+            <wire x2="1088" y1="1760" y2="1760" x1="272" />
+        </branch>
+        <iomarker fontsize="28" x="272" y="1760" name="Data_in(31:0)" orien="R180" />
+        <branch name="b(2)">
+            <wire x2="432" y1="144" y2="160" x1="432" />
+            <wire x2="432" y1="160" y2="464" x1="432" />
+            <wire x2="848" y1="464" y2="464" x1="432" />
+            <wire x2="1056" y1="160" y2="160" x1="432" />
+            <wire x2="1056" y1="160" y2="512" x1="1056" />
+            <wire x2="1264" y1="512" y2="512" x1="1056" />
         </branch>
     </sheet>
 </drawing>

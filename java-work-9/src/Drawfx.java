@@ -4,9 +4,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Polyline;
 import javafx.stage.Stage;
-
 import java.util.DoubleSummaryStatistics;
-
 public class Drawfx extends Application
 {
     @Override
