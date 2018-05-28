@@ -35,11 +35,11 @@
         <signal name="inst_field(20:16)" />
         <signal name="inst_field(15:11)" />
         <signal name="inst_field(25:0)" />
-        <signal name="inst_field(15:0)" />
         <signal name="b(31:0)" />
-        <signal name="XLXN_149(31:0)" />
-        <signal name="Data_in(31:0)" />
         <signal name="b(2)" />
+        <signal name="Data_in(31:0)" />
+        <signal name="inst_field(15:0)" />
+        <signal name="Ext_out(31:0)" />
         <port polarity="Output" name="Data_out(31:0)" />
         <port polarity="Input" name="MemtoReg" />
         <port polarity="Input" name="RegDst" />
@@ -97,13 +97,6 @@
             <line x2="0" y1="-80" y2="-80" style="linewidth:W" x1="12" />
             <line x2="0" y1="-16" y2="-16" style="linewidth:W" x1="12" />
         </blockdef>
-        <blockdef name="Ext_32">
-            <timestamp>2014-6-26T5:42:40</timestamp>
-            <circle style="linewidth:W;linecolor:rgb(255,0,0);linestyle:Dash" r="69" cx="185" cy="-33" />
-            <line x2="124" y1="0" y2="0" style="linewidth:W" x1="96" />
-            <line x2="272" y1="-64" y2="-64" style="linewidth:W" x1="248" />
-            <rect style="linecolor:rgb(255,255,255)" width="128" x="120" y="-80" height="88" />
-        </blockdef>
         <blockdef name="MUX2T1_5">
             <timestamp>2015-12-29T14:47:38</timestamp>
             <line x2="16" y1="-80" y2="-72" x1="16" />
@@ -159,6 +152,13 @@
             <line x2="64" y1="-64" y2="-80" x1="64" />
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
+        <blockdef name="Ext_32">
+            <timestamp>2018-5-25T10:15:57</timestamp>
+            <circle style="linewidth:W;linecolor:rgb(255,0,0);linestyle:Dash" r="69" cx="185" cy="-33" />
+            <line x2="124" y1="0" y2="0" style="linewidth:W" x1="96" />
+            <line x2="272" y1="-64" y2="-64" style="linewidth:W" x1="248" />
+            <rect style="linecolor:rgb(255,255,255)" width="128" x="120" y="-80" height="88" />
+        </blockdef>
         <block symbolname="alu" name="U1_1">
             <blockpin signalname="ALU_Control(2:0)" name="ALU_Ctr(2:0)" />
             <blockpin signalname="ALU_out(31:0)" name="res(31:0)" />
@@ -182,12 +182,8 @@
         <block symbolname="MUX2T1_32" name="MUXD3">
             <blockpin signalname="ALUSrc_B" name="s" />
             <blockpin signalname="XLXN_2(31:0)" name="I0(31:0)" />
-            <blockpin signalname="XLXN_149(31:0)" name="I1(31:0)" />
+            <blockpin signalname="Ext_out(31:0)" name="I1(31:0)" />
             <blockpin signalname="Data_out(31:0)" name="o(31:0)" />
-        </block>
-        <block symbolname="Ext_32" name="Ext">
-            <blockpin signalname="inst_field(15:0)" name="imm_16(15:0)" />
-            <blockpin signalname="XLXN_149(31:0)" name="Imm_32(31:0)" />
         </block>
         <block symbolname="MUX2T1_5" name="MUXD1">
             <blockpin signalname="inst_field(15:11)" name="I1(4:0)" />
@@ -241,6 +237,10 @@
         <block symbolname="gnd" name="XLXI_15">
             <blockpin signalname="NO" name="G" />
         </block>
+        <block symbolname="Ext_32" name="Ext">
+            <blockpin signalname="inst_field(15:0)" name="imm_16(15:0)" />
+            <blockpin signalname="Ext_out(31:0)" name="Imm_32(31:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="2192" y="1680" name="U1_1" orien="R0">
@@ -264,9 +264,6 @@
             <wire x2="2064" y1="1696" y2="1936" x1="2064" />
             <wire x2="3296" y1="1936" y2="1936" x1="2064" />
         </branch>
-        <instance x="1216" y="1952" name="Ext" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="96" y="36" type="instance" />
-        </instance>
         <instance x="1104" y="1616" name="MUXD1" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="0" y="0" type="instance" />
         </instance>
@@ -441,25 +438,11 @@
             <wire x2="1104" y1="1568" y2="1568" x1="928" />
         </branch>
         <bustap x2="624" y1="1952" y2="1952" x1="528" />
-        <branch name="inst_field(15:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1952" type="branch" />
-            <wire x2="1280" y1="1952" y2="1952" x1="624" />
-            <wire x2="1312" y1="1952" y2="1952" x1="1280" />
-        </branch>
         <branch name="b(31:0)">
             <wire x2="1376" y1="512" y2="512" x1="1360" />
             <wire x2="1488" y1="512" y2="512" x1="1376" />
         </branch>
         <bustap x2="1264" y1="512" y2="512" x1="1360" />
-        <branch name="XLXN_149(31:0)">
-            <wire x2="1744" y1="1888" y2="1888" x1="1488" />
-            <wire x2="1744" y1="1728" y2="1888" x1="1744" />
-            <wire x2="1888" y1="1728" y2="1728" x1="1744" />
-        </branch>
-        <branch name="Data_in(31:0)">
-            <wire x2="1088" y1="1760" y2="1760" x1="272" />
-        </branch>
-        <iomarker fontsize="28" x="272" y="1760" name="Data_in(31:0)" orien="R180" />
         <branch name="b(2)">
             <wire x2="432" y1="144" y2="160" x1="432" />
             <wire x2="432" y1="160" y2="464" x1="432" />
@@ -467,6 +450,23 @@
             <wire x2="1056" y1="160" y2="160" x1="432" />
             <wire x2="1056" y1="160" y2="512" x1="1056" />
             <wire x2="1264" y1="512" y2="512" x1="1056" />
+        </branch>
+        <branch name="Data_in(31:0)">
+            <wire x2="912" y1="1760" y2="1760" x1="224" />
+            <wire x2="1088" y1="1760" y2="1760" x1="912" />
+        </branch>
+        <iomarker fontsize="28" x="224" y="1760" name="Data_in(31:0)" orien="R180" />
+        <instance x="1104" y="1952" name="Ext" orien="R0">
+            <attrtext style="fontsize:28;fontname:Arial" attrname="InstName" x="96" y="36" type="instance" />
+        </instance>
+        <branch name="inst_field(15:0)">
+            <wire x2="1200" y1="1952" y2="1952" x1="624" />
+        </branch>
+        <branch name="Ext_out(31:0)">
+            <wire x2="1744" y1="1888" y2="1888" x1="1376" />
+            <wire x2="1808" y1="1888" y2="1888" x1="1744" />
+            <wire x2="1808" y1="1728" y2="1888" x1="1808" />
+            <wire x2="1888" y1="1728" y2="1728" x1="1808" />
         </branch>
     </sheet>
 </drawing>
