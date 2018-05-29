@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "演示Scroll-view",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

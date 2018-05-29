@@ -1,0 +1,2 @@
+<!--index.wxml-->
+<button type="default" ontap="scrollView">scroll-view</button>
