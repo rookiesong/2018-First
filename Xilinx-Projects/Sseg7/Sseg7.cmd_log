@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/hasee/Desktop/lab1/Sseg7/Sseg7.xst" -ofn "C:/Users/hasee/Desktop/lab1/Sseg7/Sseg7.syr" 
+xst -intstyle ise -ifn "C:/Users/hasee/Desktop/lab1/Sseg7/Sseg7.xst" -ofn "C:/Users/hasee/Desktop/lab1/Sseg7/Sseg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/Org-Sword.ucf -p xc7k325t-ffg676-2 Sseg7.ngc Sseg7.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Sseg7_map.ncd Sseg7.ngd Sseg7.pcf 
+par -w -intstyle ise -ol high -mt off Sseg7_map.ncd Sseg7.ncd Sseg7.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Sseg7.twx Sseg7.ncd -o Sseg7.twr Sseg7.pcf 
+bitgen -intstyle ise -f Sseg7.ut Sseg7.ncd 
+xst -intstyle ise -ifn "C:/Users/Administrator/Desktop/Sseg7/Sseg7.xst" -ofn "C:/Users/Administrator/Desktop/Sseg7/Sseg7.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd code -sd ipcore_dir -nt timestamp -uc code/Org-Sword.ucf -p xc7k325t-ffg676-2 Sseg7.ngc Sseg7.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Sseg7_map.ncd Sseg7.ngd Sseg7.pcf 
+par -w -intstyle ise -ol high -mt off Sseg7_map.ncd Sseg7.ncd Sseg7.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Sseg7.twx Sseg7.ncd -o Sseg7.twr Sseg7.pcf 
+bitgen -intstyle ise -f Sseg7.ut Sseg7.ncd 

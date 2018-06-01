@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/hasee/Desktop/lab1/Sseg7/code/LED_P2S_IO.v -lang verilog -prj Sseg7 -o LED_P2S.spl -module LED_P2S -template F:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 LED_P2S.spl C:/Users/hasee/Desktop/lab1/Sseg7/LED_P2S.sym 

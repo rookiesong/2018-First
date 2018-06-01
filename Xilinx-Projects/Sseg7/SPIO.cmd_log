@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/hasee/Desktop/lab1/Sseg7/code/SPIO.v -lang verilog -prj Sseg7 -o SPIO.spl -module SPIO -template F:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 SPIO.spl C:/Users/hasee/Desktop/lab1/Sseg7/SPIO.sym 

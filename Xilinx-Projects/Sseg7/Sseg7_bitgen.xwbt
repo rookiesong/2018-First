@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Administrator\Desktop\Sseg7\Sseg7.ncd
+OUTFILE=C:\Users\Administrator\Desktop\Sseg7\Sseg7.bit
+FAMILY=Kintex7
+PART=xc7k325t-2ffg676
+WORKINGDIR=C:\Users\Administrator\Desktop\Sseg7
+LICENSE=ISE
+USER_INFO=135256_15690819_173552794_661

@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml Sseg7.twx Sseg7.ncd -o Sseg7.twr Sseg7.pcf
+
+Design file:              Sseg7.ncd
+Physical constraint file: Sseg7.pcf
+Device,package,speed:     xc7k325t,ffg676,C,-2 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk200N to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+AN<0>       |        12.745(R)|      SLOW  |         5.683(R)|      FAST  |U8/clk200m_BUFG   |   0.000|
+AN<1>       |        12.699(R)|      SLOW  |         5.639(R)|      FAST  |U8/clk200m_BUFG   |   0.000|
+AN<2>       |        12.730(R)|      SLOW  |         5.665(R)|      FAST  |U8/clk200m_BUFG   |   0.000|
+AN<3>       |        12.656(R)|      SLOW  |         5.607(R)|      FAST  |U8/clk200m_BUFG   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock clk200P to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+AN<0>       |        12.745(R)|      SLOW  |         5.683(R)|      FAST  |U8/clk200m_BUFG   |   0.000|
+AN<1>       |        12.699(R)|      SLOW  |         5.639(R)|      FAST  |U8/clk200m_BUFG   |   0.000|
+AN<2>       |        12.730(R)|      SLOW  |         5.665(R)|      FAST  |U8/clk200m_BUFG   |   0.000|
+AN<3>       |        12.656(R)|      SLOW  |         5.607(R)|      FAST  |U8/clk200m_BUFG   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk200N
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk200N        |    1.314|         |         |         |
+clk200P        |    1.314|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk200P
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk200N        |    1.314|         |         |         |
+clk200P        |    1.314|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Jun 01 14:29:34 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 875 MB
+
+
+

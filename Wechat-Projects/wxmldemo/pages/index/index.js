@@ -51,5 +51,10 @@ Page({
     wx.navigateTo({
       url: '../scrollView/scrollView'
     })    
+  },
+  swiper: function () {
+    wx.navigateTo({
+      url: '../swiper/swiper'
+    })
   }
 })

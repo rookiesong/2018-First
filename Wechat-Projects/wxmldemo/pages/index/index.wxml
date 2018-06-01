@@ -1,2 +1,3 @@
 <!--index.wxml-->
-<button type="default" ontap="scrollView">scroll-view</button>
+<button type="primary" ontap="scrollView">scroll-view</button>
+<button type="primary" ontap="swiper">swiper</button>

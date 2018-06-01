@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/hasee/Desktop/lab1/Sseg7/SSeg7_Dev.xst" -ofn "C:/Users/hasee/Desktop/lab1/Sseg7/SSeg7_Dev.syr" 
+xst -intstyle ise -ifn "C:/Users/hasee/Desktop/lab1/Sseg7/SSeg7_Dev.xst" -ofn "C:/Users/hasee/Desktop/lab1/Sseg7/SSeg7_Dev.syr" 
+sch2sym -intstyle ise -family kintex7 -refsym SSeg7_Dev C:/Users/hasee/Desktop/lab1/Sseg7/SSeg7_Dev.sch C:/Users/hasee/Desktop/lab1/Sseg7/SSeg7_Dev.sym 

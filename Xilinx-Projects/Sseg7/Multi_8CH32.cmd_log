@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/hasee/Desktop/lab1/Sseg7/code/Multi_8CH32_IO.v -lang verilog -prj Sseg7 -o Multi_8CH32.spl -module Multi_8CH32 -template F:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Multi_8CH32.spl C:/Users/hasee/Desktop/lab1/Sseg7/Multi_8CH32.sym 

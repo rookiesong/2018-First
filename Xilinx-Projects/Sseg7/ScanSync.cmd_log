@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/hasee/Desktop/lab1/Sseg7/code/ScanSync.v -lang verilog -prj Sseg7 -o ScanSync.spl -module ScanSync -template F:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 ScanSync.spl C:/Users/hasee/Desktop/lab1/Sseg7/ScanSync.sym 

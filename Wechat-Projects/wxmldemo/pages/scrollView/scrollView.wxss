@@ -1,0 +1,32 @@
+.scroll-view-item{
+  height: 80px;
+  width: 400px;
+}
+.scroll-view_H{
+  display: flex;
+  height: 80px;
+  width: 500px;
+  flex-direction: row;
+}
+.scroll-view-item_H{
+  width: 200px;
+  height: 100%;
+}
+.bc_green{
+  background: green;
+}
+.bc_red{
+  background: red;
+}
+.bc_yellow{
+  background: yellow;
+}
+.bc_blue{
+  background: blue;
+}
+.scroll-y-style{
+  height:200px;
+}
+.scroll-x-style{
+  width:100%;
+}
