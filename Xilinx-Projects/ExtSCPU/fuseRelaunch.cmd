@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/SDPath_M_SDPath_M_sch_tb_isim_beh.exe" -prj "D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/SDPath_M_SDPath_M_sch_tb_beh.prj" "work.SDPath_M_SDPath_M_sch_tb" "work.glbl" 

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="OExp07-ExtSCPU.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="ABC32.vf"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="OExp07_ExtSCPU_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SCPU_ctrl_more_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SCPU_ctrl_more_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="SDPath_M.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SDPath_M_SDPath_M_sch_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SDPath_M_SDPath_M_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="SDPath_M_SDPath_M_sch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SDPath_M_SDPath_M_sch_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="alu.vf"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="clk_div.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="clk_div.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="clk_div.tfi"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1527928060" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1527928060">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527932471" xil_pn:in_ck="732945744070638426" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1527932471">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Code/CPU/REG32.v"/>
+      <outfile xil_pn:name="Code/CPU/Regs.v"/>
+      <outfile xil_pn:name="Code/CPU/SCtrl_M.v"/>
+      <outfile xil_pn:name="Code/IO/clk_div.v"/>
+      <outfile xil_pn:name="Code/IO/port/Counter_3_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/Display_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/GPIO_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/MIO_BUS_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/Multi_8CH32_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/PIO_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/SAnti_jitter_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/SEnter_2_32_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/Seg7_Dev_IO.v"/>
+      <outfile xil_pn:name="Code/MUX/MUX2T1_32.v"/>
+      <outfile xil_pn:name="Code/MUX/MUX2T1_5.v"/>
+      <outfile xil_pn:name="Code/MUX/MUX4T1_32.v"/>
+      <outfile xil_pn:name="Code/MUX/MUX8T1_32.v"/>
+      <outfile xil_pn:name="Code/common/Ext_imm16.v"/>
+      <outfile xil_pn:name="Code/common/add_32.v"/>
+      <outfile xil_pn:name="Code/common/addc_32.v"/>
+      <outfile xil_pn:name="Code/common/and32.v"/>
+      <outfile xil_pn:name="Code/common/nor32.v"/>
+      <outfile xil_pn:name="Code/common/or32.v"/>
+      <outfile xil_pn:name="Code/common/or_bit_32 .v"/>
+      <outfile xil_pn:name="Code/common/srl32.v"/>
+      <outfile xil_pn:name="Code/common/xor32.v"/>
+      <outfile xil_pn:name="Data_path_more_tb.v"/>
+      <outfile xil_pn:name="SCPU_ctrl_more_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1527930737" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3661281629803513473" xil_pn:start_ts="1527930737">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527930741" xil_pn:in_ck="-1840343952865552259" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7859326588041599029" xil_pn:start_ts="1527930737">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ABC32.vf"/>
+      <outfile xil_pn:name="SDPath_M.vf"/>
+      <outfile xil_pn:name="alu.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1527928068" xil_pn:in_ck="911016719092967904" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2001609459241768504" xil_pn:start_ts="1527928068">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1527932473" xil_pn:in_ck="-7473818104774070603" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1527932473">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ABC32.vf"/>
+      <outfile xil_pn:name="Code/CPU/REG32.v"/>
+      <outfile xil_pn:name="Code/CPU/Regs.v"/>
+      <outfile xil_pn:name="Code/CPU/SCtrl_M.v"/>
+      <outfile xil_pn:name="Code/IO/clk_div.v"/>
+      <outfile xil_pn:name="Code/IO/port/Counter_3_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/Display_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/GPIO_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/MIO_BUS_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/Multi_8CH32_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/PIO_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/SAnti_jitter_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/SEnter_2_32_IO.v"/>
+      <outfile xil_pn:name="Code/IO/port/Seg7_Dev_IO.v"/>
+      <outfile xil_pn:name="Code/MUX/MUX2T1_32.v"/>
+      <outfile xil_pn:name="Code/MUX/MUX2T1_5.v"/>
+      <outfile xil_pn:name="Code/MUX/MUX4T1_32.v"/>
+      <outfile xil_pn:name="Code/MUX/MUX8T1_32.v"/>
+      <outfile xil_pn:name="Code/common/Ext_imm16.v"/>
+      <outfile xil_pn:name="Code/common/add_32.v"/>
+      <outfile xil_pn:name="Code/common/addc_32.v"/>
+      <outfile xil_pn:name="Code/common/and32.v"/>
+      <outfile xil_pn:name="Code/common/nor32.v"/>
+      <outfile xil_pn:name="Code/common/or32.v"/>
+      <outfile xil_pn:name="Code/common/or_bit_32 .v"/>
+      <outfile xil_pn:name="Code/common/srl32.v"/>
+      <outfile xil_pn:name="Code/common/xor32.v"/>
+      <outfile xil_pn:name="Data_path_more_tb.v"/>
+      <outfile xil_pn:name="SCPU_ctrl_more_tb.v"/>
+      <outfile xil_pn:name="SDPath_M.vf"/>
+      <outfile xil_pn:name="alu.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1527932478" xil_pn:in_ck="1890932238041349805" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4016038701593140739" xil_pn:start_ts="1527932473">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SDPath_M_SDPath_M_sch_tb_beh.prj"/>
+      <outfile xil_pn:name="SDPath_M_SDPath_M_sch_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1527932478" xil_pn:in_ck="1668092112285222917" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4777324122992039430" xil_pn:start_ts="1527932478">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SDPath_M_SDPath_M_sch_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

@@ -1,0 +1,28 @@
+Command line:
+   SDPath_M_SDPath_M_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  23398
+
+Sat Jun 02 17:41:21 2018
+
+
+ Elaboration Time: 0.062401 sec
+
+ Current Memory Usage: 672.657 Meg
+
+ Total Signals          : 149
+ Total Nets             : 969
+ Total Signal Drivers   : 51
+ Total Blocks           : 27
+ Total Primitive Blocks : 23
+ Total Processes        : 57
+ Total Traceable Variables  : 35
+ Total Scalar Nets and Variables : 2272
+
+ Total Simulation Time: 0.078001 sec
+
+ Current Memory Usage: 987.23 Meg
+
+Sat Jun 02 17:42:16 2018
+

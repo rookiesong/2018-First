@@ -1,0 +1,3 @@
+vhdtdtfi -lib work D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/clk_div.v -lang verilog -prj OExp07-ExtSCPU -o clk_div.spl -module clk_div -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clk_div.spl D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/clk_div.sym 
+vhdtdtfi -lang verilog -prj OExp07-ExtSCPU -o D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/clk_div.tfi -lib work D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO//clk_div.v -module clk_div -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
