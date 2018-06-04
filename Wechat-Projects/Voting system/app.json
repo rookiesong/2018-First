@@ -1,0 +1,16 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/voteDetail/voteDetail",
+        "pages/comment/comment",
+        "pages/authorizetip/authorizetip",
+        "pages/voterDetail/voterDetail",
+        "pages/vote/vote"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    }
+}
