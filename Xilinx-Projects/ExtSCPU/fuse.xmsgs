@@ -5,8 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/SDPath_M.vf" Line 175: Port <arg fmt="%s" index="1">Co</arg> is not connected to this instance
-</msg>
-
 </messages>
 

@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   16:01:33 06/02/2018
+// Create Date:   17:34:40 06/06/2018
 // Design Name:   SCtrl_M
 // Module Name:   D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/SCPU_ctrl_more_tb.v
 // Project Name:  OExp07-ExtSCPU
@@ -21,7 +21,6 @@
 // Additional Comments:
 // 
 ////////////////////////////////////////////////////////////////////////////////
-
 module SCPU_ctrl_more_tb;
 
 	// Inputs

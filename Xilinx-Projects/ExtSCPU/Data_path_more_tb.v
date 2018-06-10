@@ -1,4 +1,4 @@
-// Verilog test fixture created from schematic D:\Documents\GitHub\First\Xilinx-Projects\ExtSCPU\Code\CPU\SDPath_M.sch - Sat Jun 02 16:54:39 2018
+// Verilog test fixture created from schematic D:\Documents\GitHub\First\Xilinx-Projects\ExtSCPU\Code\CPU\SDPath_M.sch - Wed Jun 06 16:39:17 2018
 
 `timescale 1ns / 1ps
 
@@ -19,7 +19,7 @@ module SDPath_M_SDPath_M_sch_tb();
 
 // Output
    wire [31:0] Data_out;
-   wire [31:0] PC_out;
+
    wire zero;
    wire [31:0] ALU_out;
    wire overflow;
@@ -31,7 +31,6 @@ module SDPath_M_SDPath_M_sch_tb();
 		.ALUSrc_B(ALUSrc_B), 
 		.RegDst(RegDst), 
 		.Data_out(Data_out), 
-		.PC_out(PC_out), 
 		.rst(rst), 
 		.clk(clk), 
 		.ALU_Control(ALU_Control), 
@@ -46,17 +45,18 @@ module SDPath_M_SDPath_M_sch_tb();
 		.Branch(Branch)
    );
 // Initialize Inputs
- initial begin    //仿真指令add，1+1=2，对于R型指令，RegDst=1，RegWrite=1.
+//实现R型指令add
+      initial begin 
 		ALUSrc_B = 0;
 		RegDst = 1;
-		rst = 0;
-		clk = 0;
-		ALU_Control = 6'b000000;   //ALU_Control=3'b010;   //add
-		inst_field = 26'b10010100111000100000100000; // 0 *000000 18 *10010 19 *10011 17*10001 0 *00000 32 *100000
+		rst = 1;
+		clk = 1;
+		ALU_Control=3'b010;
+		inst_field = 26'b10010100111000100000100000;      //18 10010 19 10011 17 10001 0 00000 32 100000
 		RegWrite = 1;
 		Jal = 0;
-		DatatoReg = 2'b10;
-		Data_in= 32'h1;
-		Branch = 0;
-	end
+		DatatoReg = 2'b00;
+		Data_in =32'h1;
+		Branch =2'b00;
+  end
 endmodule

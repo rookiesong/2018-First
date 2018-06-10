@@ -70,20 +70,12 @@ Page({
   onShareAppMessage: function () {
     
   },
-  getVoteListByType: function (e) {
-    let self = this;
-    let curName = e.currentTarget.dataset.src;
-    if (curName) {
-      wx.pageScrollTo({
-        scrollTop: 0,
-        duration: 100
-      })
-      self.setData({
-        filterName: curName,
-        currentPage: 1,
-        bottomLineState: false
-      })
-      self.getVoteList('', 1, curName);
-    }
-  },
+  targetToAdd: function () {
+    wx.navigateTo({
+      url: '/pages/comment/comment',
+      success: function (res) {
+        console.log(res)
+      }
+    })
+  }
 })

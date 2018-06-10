@@ -115,8 +115,11 @@
         <branch name="CPU_MIO">
             <wire x2="832" y1="1024" y2="1024" x1="816" />
             <wire x2="832" y1="1024" y2="1248" x1="832" />
-            <wire x2="1488" y1="1248" y2="1248" x1="832" />
-            <wire x2="1504" y1="1248" y2="1248" x1="1488" />
+            <wire x2="1504" y1="1248" y2="1248" x1="832" />
+        </branch>
+        <branch name="mem_w">
+            <wire x2="832" y1="960" y2="960" x1="816" />
+            <wire x2="1536" y1="960" y2="960" x1="832" />
         </branch>
         <iomarker fontsize="38" x="1504" y="1248" name="CPU_MIO" orien="R0" />
         <branch name="inst_in(31:0)">
@@ -141,28 +144,23 @@
         </branch>
         <branch name="XLXN_2">
             <wire x2="832" y1="512" y2="512" x1="816" />
-            <wire x2="864" y1="512" y2="512" x1="832" />
-            <wire x2="880" y1="512" y2="512" x1="864" />
+            <wire x2="880" y1="512" y2="512" x1="832" />
         </branch>
         <branch name="XLXN_3">
             <wire x2="832" y1="576" y2="576" x1="816" />
-            <wire x2="864" y1="576" y2="576" x1="832" />
-            <wire x2="880" y1="576" y2="576" x1="864" />
+            <wire x2="880" y1="576" y2="576" x1="832" />
         </branch>
         <branch name="XLXN_5">
             <wire x2="832" y1="704" y2="704" x1="816" />
-            <wire x2="864" y1="704" y2="704" x1="832" />
-            <wire x2="880" y1="704" y2="704" x1="864" />
+            <wire x2="880" y1="704" y2="704" x1="832" />
         </branch>
         <branch name="XLXN_7(2:0)">
             <wire x2="832" y1="896" y2="896" x1="816" />
-            <wire x2="864" y1="896" y2="896" x1="832" />
-            <wire x2="880" y1="896" y2="896" x1="864" />
+            <wire x2="880" y1="896" y2="896" x1="832" />
         </branch>
         <branch name="XLXN_8">
             <wire x2="832" y1="832" y2="832" x1="816" />
-            <wire x2="864" y1="832" y2="832" x1="832" />
-            <wire x2="880" y1="832" y2="832" x1="864" />
+            <wire x2="880" y1="832" y2="832" x1="832" />
         </branch>
         <iomarker fontsize="28" x="112" y="320" name="reset" orien="R180" />
         <branch name="clk">
@@ -196,38 +194,29 @@
         </branch>
         <branch name="XLXN_9(1:0)">
             <wire x2="832" y1="640" y2="640" x1="816" />
-            <wire x2="864" y1="640" y2="640" x1="832" />
-            <wire x2="880" y1="640" y2="640" x1="864" />
+            <wire x2="880" y1="640" y2="640" x1="832" />
         </branch>
         <branch name="XLXN_10(1:0)">
             <wire x2="832" y1="768" y2="768" x1="816" />
-            <wire x2="864" y1="768" y2="768" x1="832" />
-            <wire x2="880" y1="768" y2="768" x1="864" />
-        </branch>
-        <iomarker fontsize="38" x="256" y="960" name="MIO_ready" orien="R180" />
-        <iomarker fontsize="38" x="1536" y="960" name="mem_w" orien="R0" />
-        <instance x="880" y="944" name="Datapath" orien="R0">
-            <attrtext style="fontsize:58;fontname:Arial;textcolor:rgb(255,0,0)" attrname="InstName" x="160" y="-692" type="instance" />
-        </instance>
-        <branch name="mem_w">
-            <wire x2="832" y1="960" y2="960" x1="816" />
-            <wire x2="1520" y1="960" y2="960" x1="832" />
-            <wire x2="1536" y1="960" y2="960" x1="1520" />
-        </branch>
-        <branch name="XLXN_12">
-            <wire x2="288" y1="1008" y2="1120" x1="288" />
-            <wire x2="1440" y1="1120" y2="1120" x1="288" />
-            <wire x2="352" y1="1008" y2="1008" x1="288" />
-            <wire x2="1376" y1="768" y2="768" x1="1360" />
-            <wire x2="1440" y1="768" y2="768" x1="1376" />
-            <wire x2="1440" y1="768" y2="1120" x1="1440" />
+            <wire x2="880" y1="768" y2="768" x1="832" />
         </branch>
         <branch name="MIO_ready">
-            <wire x2="272" y1="960" y2="960" x1="256" />
-            <wire x2="352" y1="960" y2="960" x1="272" />
+            <wire x2="352" y1="960" y2="960" x1="256" />
         </branch>
+        <iomarker fontsize="38" x="256" y="960" name="MIO_ready" orien="R180" />
+        <branch name="XLXN_12">
+            <wire x2="352" y1="1008" y2="1008" x1="288" />
+            <wire x2="288" y1="1008" y2="1120" x1="288" />
+            <wire x2="1440" y1="1120" y2="1120" x1="288" />
+            <wire x2="1440" y1="768" y2="768" x1="1360" />
+            <wire x2="1440" y1="768" y2="1120" x1="1440" />
+        </branch>
+        <iomarker fontsize="38" x="1536" y="960" name="mem_w" orien="R0" />
         <instance x="352" y="1056" name="Controller" orien="R0">
             <attrtext style="fontsize:58;fontname:Arial;textcolor:rgb(255,0,0)" attrname="InstName" x="80" y="-512" type="instance" />
+        </instance>
+        <instance x="880" y="944" name="Datapath" orien="R0">
+            <attrtext style="fontsize:58;fontname:Arial;textcolor:rgb(255,0,0)" attrname="InstName" x="160" y="-692" type="instance" />
         </instance>
     </sheet>
 </drawing>

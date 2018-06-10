@@ -1,13 +1,13 @@
 Command line:
    SCPU_ctrl_more_tb_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  22167
+     -simrunnum  1
+     -socket  40928
 
-Sat Jun 02 16:47:24 2018
+Fri Jun 08 13:56:54 2018
 
 
- Elaboration Time: 0.0468 sec
+ Elaboration Time: 0.0312 sec
 
  Current Memory Usage: 668.451 Meg
 
@@ -20,9 +20,9 @@ Sat Jun 02 16:47:24 2018
  Total Traceable Variables  : 31
  Total Scalar Nets and Variables : 147
 
- Total Simulation Time: 1.18561 sec
+ Total Simulation Time: 0.0312 sec
 
- Current Memory Usage: 825.737 Meg
+ Current Memory Usage: 668.451 Meg
 
-Sat Jun 02 16:49:02 2018
+Fri Jun 08 14:00:07 2018
 

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/OExp07_ExtSCPU.xst" -ofn "D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/OExp07_ExtSCPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd Code/IO -sd ipcore_dir -nt timestamp -uc Code/Sword20.ucf -p xc7k325t-ffg676-2 OExp07_ExtSCPU.ngc OExp07_ExtSCPU.ngd  
+map -intstyle ise -p xc7k325t-ffg676-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ngd OExp07_ExtSCPU.pcf 
+par -w -intstyle ise -ol high -mt off OExp07_ExtSCPU_map.ncd OExp07_ExtSCPU.ncd OExp07_ExtSCPU.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml OExp07_ExtSCPU.twx OExp07_ExtSCPU.ncd -o OExp07_ExtSCPU.twr OExp07_ExtSCPU.pcf 
+bitgen -intstyle ise -f OExp07_ExtSCPU.ut OExp07_ExtSCPU.ncd 
