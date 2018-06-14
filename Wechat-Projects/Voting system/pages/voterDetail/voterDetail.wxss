@@ -41,7 +41,7 @@ page {
 
 .vote-option-tip {
     margin-right: 12rpx;
-    color: #7087f4;
+    color: #000000;
 }
 
 .no-votes-tip {

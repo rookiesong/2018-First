@@ -52,11 +52,11 @@ module SDPath_M_SDPath_M_sch_tb();
 		rst = 1;
 		clk = 1;
 		ALU_Control=3'b010;
-		inst_field = 26'b10010100111000100000100000;      //18 10010 19 10011 17 10001 0 00000 32 100000
+		inst_field = 0;
 		RegWrite = 1;
 		Jal = 0;
 		DatatoReg = 2'b00;
-		Data_in =32'h1;
+		Data_in =0;
 		Branch =2'b00;
   end
 endmodule

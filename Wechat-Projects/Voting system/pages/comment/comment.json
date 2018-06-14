@@ -1,6 +1,6 @@
 {
-    "navigationBarTitleText": "阳光投票",
-    "navigationBarBackgroundColor": "#7087f4",
+    "navigationBarTitleText": "投票系统",
+    "navigationBarBackgroundColor": "#000000",
     "navigationBarTextStyle": "white",
     "backgroundTextStyle": "light"
 }

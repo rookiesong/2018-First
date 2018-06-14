@@ -25,9 +25,7 @@ static const char *ng0 = "D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Data
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
 static unsigned int ng3[] = {2U, 0U};
-static unsigned int ng4[] = {39028768U, 0U};
-static unsigned int ng5[] = {0U, 0U};
-static unsigned int ng6[] = {1U, 0U};
+static unsigned int ng4[] = {0U, 0U};
 
 
 
@@ -59,7 +57,7 @@ LAB2:    xsi_set_current_line(50, ng0);
     t2 = (t0 + 2568);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 3);
     xsi_set_current_line(55, ng0);
-    t1 = ((char*)((ng4)));
+    t1 = ((char*)((ng1)));
     t2 = (t0 + 2728);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 26);
     xsi_set_current_line(56, ng0);
@@ -71,15 +69,15 @@ LAB2:    xsi_set_current_line(50, ng0);
     t2 = (t0 + 3048);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 1);
     xsi_set_current_line(58, ng0);
-    t1 = ((char*)((ng5)));
+    t1 = ((char*)((ng4)));
     t2 = (t0 + 3208);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 2);
     xsi_set_current_line(59, ng0);
-    t1 = ((char*)((ng6)));
+    t1 = ((char*)((ng1)));
     t2 = (t0 + 3368);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 32);
     xsi_set_current_line(60, ng0);
-    t1 = ((char*)((ng5)));
+    t1 = ((char*)((ng4)));
     t2 = (t0 + 3528);
     xsi_vlogvar_assign_value(t2, t1, 0, 0, 2);
 

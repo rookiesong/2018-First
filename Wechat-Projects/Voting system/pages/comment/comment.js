@@ -338,7 +338,7 @@ Page({
                     wx.showModal({
                         content: '投票内容包含敏感信息;请先修改再发布',
                         showCancel: false,
-                        confirmColor: '#7087f4'
+                        confirmColor: '#000000'
                     });
                     return;
                 }

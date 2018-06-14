@@ -1,27 +1,22 @@
+<!--comment.wxml-->
 <view class="vote-add" scroll-y="{{addNewVoteState}}">
   <view class="vote-add-item clearfix">
-    <label class="label-for-input">投票标题</label>
+   <text>投票标题</text>
     <input class="bottom-line" type="text" placeholder="请输入投票标题,至少3个字" maxlength="140" bindinput="bindTitleInput"  confirm-type="done" value="{{newVoteTitle}}"/>
   </view>
+  
   <view class="vote-add-item clearfix">
-    <label class="label-for-input">投票类型</label>
-    <radio-group class="vote-radio-group vote-add-item-data" bindchange="radioChange">
-      <label wx:for="{{voteTypes}}" wx:key="{{index}}">
-        <radio class="vote-radio" value="{{item.name}}" checked="{{item.checked}}" 	color="#000000"/>{{item.value}}
-      </label>
-    </radio-group>
-  </view>
-  <view class="vote-add-item clearfix">
-    <label>投票描述</label>
-    <textarea wx:if="{{!desTextareaState}}" class="fl vote-add-item-data" bindinput="bindDesTextAreaInput" maxlength="120" auto-height placeholder="补充描述（选填，不超过120字）" value="{{desTextareaData}}" />
+   <text>投票描述</text>
+    <br/>
+    <textarea wx:if="{{!desTextareaState}}" class="fl vote-add-item-data" bindinput="bindDesTextAreaInput" maxlength="120" auto-height  value="{{desTextareaData}}" />
     <view class="fl peso-des-textarea" wx:elif="{{desTextareaState}}">
       <text wx:if="desTextareaDataLen>0">{{desTextareaData}}</text>
-      <text wx:if="desTextareaDataLen===0">补充描述（选填，不超过120字）</text>
     </view>
     <view wx:if="{{desTextareaDataLen>0}}" class="fr vote-add-item-data des-textarea-tip"><text class="{{desTextareaDataLen===120?'color-warn':''}}">{{desTextareaDataLen}}/120</text></view>
   </view>
+
   <view class="vote-add-item vote-add-item-imgs clearfix">
-    <label>投票配图<text>(最多4张)</text></label>
+  <text>投票配图（最多4张）</text>
     <view class="vote-add-item-imgs-box">
       <view wx:for="{{voteImgs}}" wx:key="{{index}}">          
         <image wx:if="{{item}}" data-src="{{item}}" src="{{item}}" mode="aspectFill" bindtap="bindPreviewImage"></image>
@@ -29,9 +24,10 @@
       </view>
       <image hidden="{{voteImgs.length==4?true:false}}" src="../../images/uploadImg.png"  catchtap="uploadImg"></image>
     </view>
+    
   </view>
   <view class="vote-add-item clearfix">
-    <label>设置选项</label>
+  <text>添加选项</text>
     <view class="vote-options fl vote-add-item-data">
         <view class="vote-option-container" wx:if="{{newVotes.length>0}}">
           <view wx:for="{{newVotes}}" wx:key="{{index}}" class="bottom-line" hover-class="vote-option-hover-class" data-index="{{index}}"  bindlongpress="confirmDelItem"> 

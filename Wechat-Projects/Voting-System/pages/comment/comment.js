@@ -1,6 +1,4 @@
-//logs.js
 const util = require('../../utils/util.js')
-
 Page({
   data: {
     newVoteTitle: '',
@@ -19,38 +17,6 @@ Page({
     voteImgs: [],
     voteImgPaths: [],
     saveBtnState: true,
-    voteTypes: [
-      { name: 'F', value: '公开', checked: true },
-      { name: 'T', value: '私密' }
-    ]
-  },
-  radioChange: function (e) {
-    let self = this;
-    let choosedValue = e.detail.value;
-    if (e.detail.value === "T") {
-      wx.showModal({
-        content: '私密投票只有自己和被分享的朋友才能看到哦~',
-        success: function (res) {
-          if (res.confirm) {
-            self.setData({
-              voteTypeChoosed: choosedValue
-            })
-            return;
-          } else if (res.cancel) {
-            self.setData({
-              voteTypes: [
-                { name: 'F', value: '公开', checked: true },
-                { name: 'T', value: '私密' }
-              ]
-            })
-          }
-        }
-      })
-    } else {
-      self.setData({
-        voteTypeChoosed: choosedValue
-      })
-    }
   },
   bindTitleInput: function (e) {
     let self = this;

@@ -8,7 +8,7 @@
     <label class="label-for-input">投票类型</label>
     <radio-group class="vote-radio-group vote-add-item-data" bindchange="radioChange">
       <label wx:for="{{voteTypes}}" wx:key="{{index}}">
-        <radio class="vote-radio" value="{{item.name}}" checked="{{item.checked}}" 	color="#7087f4"/>{{item.value}}
+        <radio class="vote-radio" value="{{item.name}}" checked="{{item.checked}}" 	color="#000000"/>{{item.value}}
       </label>
     </radio-group>
   </view>
@@ -44,7 +44,7 @@
         </view>
         <button wx:if="{{newVotes.length < 4}}" type="defalut" bindtap="addNewVote"><i class="fa fa-plus"></i>添加投票选项</button>
         <view class="vote-item-tip">
-        <icon  type="info" size="16" color="#7087f4"/>
+        <icon  type="info" size="16" color="#000000"/>
         <view>
           <text>选项最少两个，最多四个</text>        
         </view>

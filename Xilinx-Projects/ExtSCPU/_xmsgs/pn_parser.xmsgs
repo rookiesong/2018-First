@@ -8,7 +8,82 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Data_path_more_tb.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/CPU/REG32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/CPU/Regs.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/CPU/SCtrl_M.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/clk_div.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/Counter_3_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/Display_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/GPIO_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/MIO_BUS_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/Multi_8CH32_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/PIO_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/SAnti_jitter_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/SEnter_2_32_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/IO/port/Seg7_Dev_IO.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/MUX/MUX2T1_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/MUX/MUX2T1_5.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/MUX/MUX4T1_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/MUX/MUX8T1_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/Ext_imm16.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/add_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/addc_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/and32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/nor32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/or32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/or_bit_32 .v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/srl32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;D:/Documents/GitHub/First/Xilinx-Projects/ExtSCPU/Code/common/xor32.v&quot; into library work</arg>
 </msg>
 
 </messages>

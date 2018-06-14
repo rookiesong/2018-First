@@ -20,7 +20,7 @@ page {
 .vote-item-hd .nickname {
     font-size: 24rpx;
     font-weight: 500;
-    color: #7087f4;
+    color: #000000;
 }
 
 .vote-item-hd image {
@@ -56,7 +56,7 @@ page {
 }
 
 .vote-item-hd-op-hover .fa-circle {
-    color: #7087f4;
+    color: #000000;
 }
 
 .vote-item-con {
@@ -93,7 +93,7 @@ page {
     text-align: center;
     line-height: 72rpx;
     box-sizing: border-box;
-    color: #7087f4;
+    color: #000000;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -112,7 +112,7 @@ page {
 .vote-item-data-percent {
     position: absolute;
     right: 12rpx;
-    color: #7087f4;
+    color: #000000;
 }
 
 .vote-item-data-voted {
@@ -198,12 +198,12 @@ page {
     font-size: 28rpx;
     text-align: center;
     background-color: #ffffff;
-    color: #7087f4;
+    color: #000000;
     box-sizing: border-box;
 }
 
 .votes-list-tab .tab.active {
-    border-bottom: 4rpx solid #7087f4;
+    border-bottom: 4rpx solid #000000;
 }
 
 .vote-add-btn {
@@ -215,7 +215,7 @@ page {
     font-size: 32rpx;
     line-height: 96rpx;
     text-align: center;
-    color: #7087f4;
+    color: #000000;
     background-color: #ffffff;
     box-shadow: 0 -2rpx 2rpx rgba(0, 0, 0, 0.1);
 }
@@ -241,7 +241,7 @@ page {
     width: 412rpx;
     height: 84rpx;
     line-height: 84rpx;
-    background-color: #7087f4;
+    background-color: #000000;
 }
 
 .vote-imgs {

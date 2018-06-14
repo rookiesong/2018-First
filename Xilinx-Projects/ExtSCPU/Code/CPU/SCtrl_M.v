@@ -43,7 +43,7 @@ module 	     SCtrl_M(input[5:0]OPcode,				//OPcode
 		mem_w=0;
 		CPU_MIO=0;
 		
-			case(OPcode)												//采用一级译码，不用ALUop编码
+			case(OPcode)												
 				6'b000000: begin RegDst=1;RegWrite=1;			//ALU
 							  case(Fun)
 								6'b100000: ALU_Control=3'b010;	//add
@@ -54,7 +54,6 @@ module 	     SCtrl_M(input[5:0]OPcode,				//OPcode
 								6'b100111: ALU_Control=3'b100;	//nor:~(A | B)
 								6'b000010: ALU_Control=3'b101;	//srl
 								6'b010110: ALU_Control=3'b011;	//xor
-				//				6'h00:	  ALU_Control=3'b011;	//sll
 								6'h08:	  Branch=2'b11; 			//jr
 
 								default:   ALU_Control=3'bx;
@@ -67,12 +66,12 @@ module 	     SCtrl_M(input[5:0]OPcode,				//OPcode
 				6'b101011: begin ALU_Control=3'b010;									//add计算地址
 									  ALUSrc_B=1;	mem_w=1;							end	//store
 									  
-				6'b000100: begin ALU_Control=3'b110;									//减法zero=1?
+				6'b000100: begin ALU_Control=3'b110;									
 									  Branch={1'b0,zero};							end	//beq	
 									  
 				6'b000010:		  Branch=2'b10;											//jump
 				
-				6'h05: 	  begin ALU_Control=3'b110;									//减法zero=0?
+				6'h05: 	  begin ALU_Control=3'b110;									
 									  Branch={1'b0,~zero};							end	//bne
 									  
 				6'h24: 	  begin ALU_Control=3'b111;
@@ -82,7 +81,7 @@ module 	     SCtrl_M(input[5:0]OPcode,				//OPcode
 									  ALUSrc_B=1;	RegWrite=1;						end	//addi;	
 
 		//		6'h09: 	  begin ALU_Control=3'b010; 
-		//							  ALUSrc_B=2‘b10;RegWrite=1;end						//addui要扩展ALUSrc_B信号
+		//							  ALUSrc_B=2‘b10;RegWrite=1;end					
 
 				6'h0c: 	  begin ALU_Control=3'b000;	
 									  ALUSrc_B=1; RegWrite=1;						end	//andi

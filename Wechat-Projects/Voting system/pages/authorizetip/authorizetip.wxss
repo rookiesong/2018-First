@@ -15,7 +15,7 @@ page {
     width: 412rpx;
     height: 84rpx;
     line-height: 84rpx;
-    background-color: #7087f4;
+    background-color: #000000;
 }
 
 .no-vote-tip text {

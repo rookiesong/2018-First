@@ -1,0 +1,11 @@
+{
+
+     // 以像素为单位控制字号。
+  "editor.fontSize": 18,
+
+  // 控制 Markdown 预览中使用的字号(以像素为单位)。
+  "markdown.preview.fontSize": 18,
+
+  // 控制终端的字号(以像素为单位)。
+  "terminal.integrated.fontSize": 18
+}

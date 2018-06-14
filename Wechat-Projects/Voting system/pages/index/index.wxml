@@ -3,7 +3,6 @@
 <view class="view-container">
     <view class="votes-list-tab">
         <view class="tab {{filterName==='all'?'active':''}}" data-src="all" bindtap="getVoteListByType" hover-class="vote-item-data-active">全部</view>
-        <view class="tab {{filterName==='popular'?'active':''}}" data-src="popular" bindtap="getVoteListByType" hover-class="vote-item-data-active">最热</view>
         <view class="tab {{filterName==='mine'?'active':''}}" data-src="mine" bindtap="getVoteListByType" hover-class="vote-item-data-active">我的</view>
     </view>
     <view class="votes-list">

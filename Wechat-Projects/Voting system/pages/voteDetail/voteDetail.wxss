@@ -43,7 +43,7 @@ page {
     display: inline-block;
     position: absolute;
     right: 28rpx;
-    color: #7087f4;
+    color: #000000;
 }
 
 .vote-option {
@@ -53,7 +53,7 @@ page {
     line-height: 100rpx;
     font-size: 32rpx;
     text-align: center;
-    color: #7087f4;
+    color: #000000;
     -webkit-transition: 2s width ease-in-out;
     transition: 2s width ease-in-out;
     background-color: #ffffff;
@@ -89,7 +89,7 @@ page {
 .voter-title {
     padding: 20rpx 0;
     font-size: 28rpx;
-    color: #7087f4;
+    color: #000000;
 }
 
 .voter-item {
@@ -127,7 +127,7 @@ page {
     font-size: 32rpx;
     line-height: 96rpx;
     text-align: center;
-    color: #7087f4;
+    color: #000000;
     background-color: #ffffff;
     box-shadow: 0 -2rpx 2rpx rgba(0, 0, 0, 0.1);
 }
@@ -140,7 +140,7 @@ page {
 
 .vote-detail-ft button {
     font-size: 32rpx !important;
-    color: #7087f4 !important;
+    color: #000000 !important;
     border: 0;
     line-height: 96rpx;
 }
@@ -151,7 +151,7 @@ page {
     font-size: 30rpx !important;
     font-weight: bold;
     color: #707070;
-    border-left: 8rpx solid #7087f4;
+    border-left: 8rpx solid #000000;
 }
 
 .vote-imgs {

@@ -56,7 +56,7 @@ const request = (object) => {
             wx.showModal({
                 content: '登录信息已过期，请重新授权',
                 showCancel: false,
-                confirmColor: '#7087f4',
+                confirmColor: '#000000',
                 success: function(res) {
                     if (res.confirm) {
                         app.getUserInfo()

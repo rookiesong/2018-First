@@ -10,7 +10,7 @@
     "window": {
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTitleText": "WeChat",
+        "navigationBarTitleText": "微信",
         "navigationBarTextStyle": "black"
     }
 }
