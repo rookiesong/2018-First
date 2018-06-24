@@ -1,13 +1,13 @@
 Command line:
    SDPath_M_SDPath_M_sch_tb_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  1204
+     -simrunnum  1
+     -socket  13757
 
-Sun Jun 10 19:10:52 2018
+Sat Jun 16 23:59:55 2018
 
 
- Elaboration Time: 0.0468 sec
+ Elaboration Time: 0.062401 sec
 
  Current Memory Usage: 672.657 Meg
 
@@ -20,9 +20,9 @@ Sun Jun 10 19:10:52 2018
  Total Traceable Variables  : 35
  Total Scalar Nets and Variables : 2272
 
- Total Simulation Time: 0.0468 sec
+ Total Simulation Time: 0.093601 sec
 
  Current Memory Usage: 672.657 Meg
 
-Sun Jun 10 19:10:56 2018
+Sun Jun 17 00:09:52 2018
 

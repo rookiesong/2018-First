@@ -1,6 +1,6 @@
-//Finance.js
+
 //For more information, visit http://financejs.org
-//Copyright 2014 - 2015 Essam Al Joubori, MIT license
+
 
 // Instantiate a Finance class
 var Finance = function () { };

@@ -260,19 +260,6 @@
     </view>
   </block>
   <block wx-if="{{id==5}}">
-    <!-- <view class="weui-cells__title">输入参数</view>
-    <view class="weui-cells weui-cells_after-title">
-      <view class="weui-cell weui-cell_input">
-        <view class="weui-cell__hd">
-          <view class="weui-label">初期投资</view>
-        </view>
-        <view class="weui-cell__bd">
-          <input class="weui-input" type="digit" placeholder="请输入初期投资" data-key="initialInvestment_5" value="{{datas[5].initialInvestment}}" bindinput="dataChange"></input>
-        </view>
-        <view class="weui-cell__bd weui-cell__ft">元</view>
-      </view>
-    </view> -->
-
     <view class="weui-cells__title weui-label">现金流</view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">

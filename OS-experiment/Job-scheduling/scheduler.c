@@ -249,7 +249,60 @@ void do_enq(struct jobinfo *newjob, struct jobcmd enqcmd)
 
 
 void do_deq(struct jobcmd deqcmd)
-{}
+{
+	int deqjid=atoi(deqcmd.data);
+	struct waitqueue*sel, *selflag, *p, *pflag;
+	if (current->job->jid == deqjid)//删除正在运行的作业，反之删除就绪队列中的作业
+	{
+		printf("stop current job\n");
+		kill(SIGTERM, current->job->pid);
+		for (int i = 0; (current->job->cmdarg)[i] != NULL; i++)
+		{
+			free((current->job->cmdarg)[i]);
+			(current->job->cmdarg)[i] = NULL;
+		}
+		free(current->job->cmdarg);
+		free(current->job);
+		free(current);
+		current = NULL;
+	}
+	else
+	{
+		sel = NULL;
+		selflag = NULL;
+		if (head)
+		{
+			for (pflag = head, p = head; p != NULL; pflag = p,p = p->next)//遍历队列，判断是否已经在队列中
+				if (p->job->jid == deqjid)
+				{
+				sel = p;
+				selflag = pflag;
+				break;
+				}
+			selflag->next = sel->next;
+			if (sel = selflag)
+				head = NULL;
+		}
+
+		if (sel)
+		{
+			for (int i = 0; (sel->job->cmdarg)[i] != NULL; i++)
+			{
+				free((sel->job->cmdarg)[i]);
+				(sel->job->cmdarg)[i] = NULL;
+			}
+			printf("stop ready job\n");
+			free(sel->job->cmdarg);
+			free(sel->job);
+			free(sel);
+			sel = NULL;
+		}
+
+
+	}
+
+
+}
 
 
 

@@ -3,10 +3,10 @@ Page({
     cities: ["成都","北京", "上海", "深圳"],
     cityIndex: 0,
 
-    types: ["城镇", "五险", "深户一档", "城镇", "五险", "不限"],
-    // typeIndex: 0,
-    shebao: 3082,
-    gjj: 2148,
+    types: ["城镇", "城镇","五险", "深户一档"],
+    
+    shebao: 3067,
+    gjj: 1400,
     personTotal: '-',
     companyTotal: '-',
     total: '-',
