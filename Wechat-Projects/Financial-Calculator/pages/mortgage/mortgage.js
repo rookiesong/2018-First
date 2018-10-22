@@ -25,7 +25,7 @@ Page({
     rateIndex1: 0,
     percentArr: [7, 6, 5, 4, 3, 2],
     percentIndex: 0,
-    years: [30, 25, 20, 15, 10],
+    years: [30, 25, 20, 15,13,10],
     yearIndex: 0,
 
     sliderOffset: 0,
