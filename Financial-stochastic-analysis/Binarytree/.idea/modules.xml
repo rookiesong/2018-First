@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Dlcreader.iml" filepath="$PROJECT_DIR$/Dlcreader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Binarytree.iml" filepath="$PROJECT_DIR$/Binarytree.iml" />
     </modules>
   </component>
 </project>
