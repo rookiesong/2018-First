@@ -15,8 +15,8 @@
       <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="79" column="52" lean-forward="true" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+            <state relative-caret-position="-2442">
+              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,6 +61,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,9 +90,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -194,31 +194,32 @@
       <workItem from="1555401795887" duration="68000" />
       <workItem from="1555404371926" duration="730000" />
       <workItem from="1555408891646" duration="36000" />
+      <workItem from="1555491749994" duration="25000" />
+      <workItem from="1555496692990" duration="59000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34058000" />
+    <option name="totallyTimeSpent" value="34142000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="调试" order="7" sideWeight="0.49932975" weight="0.32905984" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.10924933" side_tool="true" visible="true" weight="0.73789173" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.11058981" side_tool="true" visible="true" weight="0.41025642" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="消息" order="8" sideWeight="0.49396783" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932975" weight="0.32905984" />
-      <window_info anchor="bottom" id="运行" order="7" sideWeight="0.89075065" weight="0.2008547" />
+      <window_info anchor="bottom" id="运行" order="7" sideWeight="0.8894102" weight="0.41025642" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="控制板" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11394102" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.116621986" />
       <window_info id="设计师" order="2" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -275,6 +276,26 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1738">
+          <caret line="79" column="52" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1738">
+          <caret line="79" column="52" lean-forward="true" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -350,8 +371,8 @@
     <entry file="file://$PROJECT_DIR$/src/Writetxt.java" />
     <entry file="file://$PROJECT_DIR$/src/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="79" column="52" lean-forward="true" selection-start-line="79" selection-start-column="52" selection-end-line="79" selection-end-column="52" />
+        <state relative-caret-position="-2442">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
