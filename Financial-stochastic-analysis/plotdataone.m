@@ -1,4 +1,4 @@
-filename = 'plotdata.txt';
+filename = 'binplotdata.txt';
 [N,V,Time]=textread(filename,'%n%n%n',19);
 plot(N,V,'k*','LineWidth',1.5);
 hold on

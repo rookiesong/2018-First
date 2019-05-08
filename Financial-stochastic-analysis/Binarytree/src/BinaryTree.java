@@ -115,7 +115,7 @@ class TreeApp {
         //考虑到java绘图并不美观，将计算数据输出到文本"plotdata.txt"中，使用matlab绘图
         FileWriter fileWriter = null;
         try {
-            fileWriter = new FileWriter("D:/Documents/GitHub/First/Financial-stochastic-analysis/plotdata.txt");//创建文本文件
+            fileWriter = new FileWriter("D:/Documents/GitHub/First/Financial-stochastic-analysis/binplotdata.txt");//创建文本文件
             int i=0;
             while(i<19){//循环写入
                 fileWriter.write(plotdata.get(i)+"\r\n");//写入 \r\n换行
